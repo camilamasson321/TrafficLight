@@ -5,19 +5,29 @@ import React, { useState } from "react";
 //create your first component
 
 const Light = () => {
-  //initilize a count variable at 0, the setCount function
-  // will be used to re-set the "count" value.
-  const [color, setColor] = useState(0);
-  return (
-    <div>
-      <h2>{color} likes</h2>
-      {/* Reset count to its previous value + 1 */}
-      <span onClick={() => setColor(count + 1)}>👍🏽</span>
-      <span onClick={() => setColor(count - 1)}>👎🏽</span>
-	  <span onClick={() => setColor(count - 1)}>👎🏽</span>
-      <h3>Like or dislike to increase/decrease</h3>
-    </div>
-  );
+	const [color, setColor] = useState("");
+
+	return (
+		<>
+			<div className="trafficpole"></div>
+			<div className="container d-flex justify-content-evenly flex-column align-items-center">
+				<div
+					className={`light red ${color === "red" ? "glow" : ""}`}
+					onClick={() => setColor("red")}></div>
+				<div
+					className={`light yellow ${
+						color === "yellow" ? "glow" : ""
+					}`}
+					onClick={() => setColor("yellow")}></div>
+				<div
+					className={`light green ${
+						color === "green" ? "glow" : ""
+					}`}
+					onClick={() => setColor("green")}></div>
+			</div>
+		</>
+	);
 };
 
 export default Light;
+

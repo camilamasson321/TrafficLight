@@ -1,12 +1,39 @@
 
-/* 
+.container {
+    height: 350px;
+    width: 150px;
+    margin: auto;
+    background: black;
+    border-radius: 10%;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.trafficpole {
+    height: 50px;
+    width: 20px;
+    background: black;
+    border: 1px solid black;
+    margin: auto;
+}
 
-*/
+.light {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.red {
+    background: red;
+}
+
+.yellow {
+    background: yellow;
+}
+
+.green {
+    background: green;
+}
+
+.glow {
+    box-shadow: lightyellow 2px 2px 60px 5px;
+}
